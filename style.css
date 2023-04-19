@@ -153,7 +153,20 @@ nav>ul>li>img:hover{
 /* FOOTER */
 
 footer{
+    display: flex;
     margin-top: 1%;
     border: solid 1px #000000;
     padding: 1%;
 }
+ footer>section{
+    flex: 1;
+ }
+
+ footer>section:last-of-type{
+    text-align: end;
+ }
+
+ footer>section>ul{
+    display: flex;
+    flex-direction: row-reverse;
+ }
