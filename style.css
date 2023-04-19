@@ -1,0 +1,69 @@
+@font-face {
+    font-family: bond;
+    src: url(fonts/aleo/Aleo-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: bond;
+    src: url(fonts/aleo/Aleo-Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: bond;
+    src: url(fonts/aleo/Aleo-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: bond;
+    src: url(fonts/aleo/Aleo-Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+figure>img {
+    width: 100%;
+    margin: auto;
+}
+
+a {
+    text-decoration: underline;
+    color: #0000;
+}
+
+li {}
+
+/* HEADER */
+header {
+    border: solid 1px #0000;
+    display: flex;
+    align-items: center;
+}
+
+header>figure {
+    flex: 1;
+}
+
+header>h1 {
+    flex: 4;
+    text-align: center;
+    font-size: 4vw;
+}
+
+header>form {
+    flex: 1;
+}
+
+
+
+/* FOOTER */
