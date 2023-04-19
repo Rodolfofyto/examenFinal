@@ -37,8 +37,8 @@ figure>img {
 }
 
 a {
-    text-decoration: underline;
-    color: #0000;
+    text-decoration: none;
+    color: #000000;
 }
 
 li {
@@ -51,18 +51,26 @@ header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-bottom: 1%;
 }
 
 header>figure {
+    margin-left: 1%;
     flex: 1;
-    min-width: 300px;
+    min-width: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 1px 2px 3px #000000;
 }
 
 header>h1 {
     flex: 4;
-    text-align: center;
+    font-family: bond;
     font-size: 4vw;
-    min-width: 400px;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 0px 0px 10px #0b091e;
+    min-width: 300px;
 }
 
 header>form {
@@ -74,11 +82,17 @@ header>form {
 header>form>label {
     font-family: bond;
     font-weight: bold;
+    font-variant: small-caps;
     min-width: 100px;
     display: inline-block;
     margin-bottom: 2%;
     padding: 1%;
     text-align: left;
+}
+
+header>form>input:hover {
+    outline: 3px solid #008000;
+    cursor: pointer;
 }
 
 header>form>button {
@@ -99,25 +113,47 @@ header>form>button:hover {
 /* NAV */
 
 nav {
-    border: solid 2px #0000;
+    border: solid 2px #000000;
     padding: 1%;
-    margin: 1%;
 }
 
 nav>ul {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 nav>ul>li {
     margin: 1%;
-    font-size: 3vw;
+    cursor: pointer;
+}
+
+nav>ul>li:nth-of-type(7){
+    margin-left: 15%;
 }
 
 nav>ul>li>a {
     margin: 1%;
-    font-size: 3vw;
+    padding: 5% 10%;
+    font-size: 2.5vw;
+    color: #ffff;
+    background-color: #0c0677;
 }
 
+nav>ul>li>a:hover{
+    background-color: #ffffff;
+    color:#0c0677;
+}
+
+nav>ul>li>img:hover{
+    width: 110%;
+}
 
 /* FOOTER */
+
+footer{
+    margin-top: 1%;
+    border: solid 1px #000000;
+    padding: 1%;
+}
