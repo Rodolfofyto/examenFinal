@@ -41,30 +41,53 @@ a {
     color: #0000;
 }
 
-li {}
+li {
+    list-style: none;
+}
 
 /* HEADER */
 header {
     border: solid 1px #0000;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 header>figure {
     flex: 1;
+    min-width: 300px;
 }
 
 header>h1 {
     flex: 4;
     text-align: center;
     font-size: 4vw;
+    min-width: 400px;
 }
 
 header>form {
     flex: 1;
+    min-width: 300px;
 }
 
 /* NAV */
+
+nav {
+    border: solid 1px #0000;
+    padding: 1%;
+}
+
+nav>ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav>ul>li {
+    margin: 1%;
+    font-size: 3vw;
+}
+
+nav>ul>li>a {}
 
 
 /* FOOTER */
