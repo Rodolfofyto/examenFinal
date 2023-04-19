@@ -170,3 +170,8 @@ footer{
     display: flex;
     flex-direction: row-reverse;
  }
+
+ footer>section>p>a{
+    text-decoration: underline;
+    color: #2901f2;
+ }
