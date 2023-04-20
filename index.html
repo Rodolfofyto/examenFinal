@@ -17,9 +17,11 @@
         <h1>Título de la Web</h1>
         <form action="">
             <label for="">Usuario:</label>
-            <input type="text" title="" name="usuario" placeholder="user" pattern="" /><br />
+            <input type="text" title="entre 4 a 12 caracteres" name="usuario" minlength="4" maxlength="12"
+                placeholder="user" pattern=".{4,12}" required="required" /><br />
             <label for="">Contraseña:</label>
-            <input type="password" title="" name="password" placeholder="password" pattern="" /><br />
+            <input type="password" title="entre 4 a 12 caracteres" name="password" minlength="4" maxlength="12"
+                placeholder="password" pattern=".{4,12}" required="required" /><br />
             <button type="submit">LOGIN</button>
         </form>
     </header>
