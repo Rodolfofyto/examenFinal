@@ -64,7 +64,7 @@ header>figure {
 }
 
 header>h1 {
-    flex: 4;
+    flex: 7;
     font-family: bond;
     font-size: 4vw;
     text-align: center;
@@ -74,7 +74,7 @@ header>h1 {
 }
 
 header>form {
-    flex: 1;
+    flex: 3;
     min-width: 300px;
     text-align: center;
 }
