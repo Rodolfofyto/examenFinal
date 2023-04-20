@@ -110,6 +110,14 @@ header>form>button:hover {
     color: #ffff;
 }
 
+header>form>input:valid{
+    border: 1px solid rgb(1, 132, 1);
+}
+
+header>form>input:invalid{
+    border: 1px solid rgb(220, 10, 10);
+}
+
 /* NAV */
 
 nav {
@@ -155,7 +163,7 @@ nav>ul>li>img:hover{
 footer{
     display: flex;
     margin-top: 1%;
-    border: solid 1px #000000;
+    border: groove 10px #e4e4e4;
     padding: 1%;
 }
  footer>section{
