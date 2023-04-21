@@ -8,7 +8,79 @@
     <title>Registro</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        main {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            border-top: solid 1px #000000;
+        }
 
+        main>figure {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        main>form {
+            flex: 2;
+            padding: 3%;
+            background-color: #ffffff;
+        }
+
+        main>form>label {
+            display: inline-block;
+            min-width: 170px;
+            font-variant: small-caps;
+            font-weight: 1em;
+        }
+
+        main>form>input {
+            max-width: 80px;
+            padding: 1%;
+            margin-bottom: 1%;
+        }
+
+        main>form>input:nth-of-type(4) {
+            min-width: 290px;
+        }
+
+        main>form>input:nth-of-type(5) {
+            min-width: 290px;
+        }
+
+        main>form>input:nth-of-type(6) {
+            min-width: 290px;
+        }
+
+        main>form>input:nth-of-type(7) {
+            min-width: 290px;
+        }
+
+        main>form>input:hover {
+            outline: 2px solid #008000;
+            cursor: pointer;
+        }
+
+        main>form>select {
+            min-width: 175px;
+            padding: 1.5%;
+            margin-bottom: 1%;
+        }
+
+        main>form>select:hover {
+            outline: 3px solid #008000;
+            cursor: pointer;
+        }
+
+        main>form>button {
+            width: 60px;
+            padding: 1%;
+            background-color: #d8d4cc;
+            cursor: pointer;
+        }
+
+        main>form>button:hover {
+            outline: 2px solid #1b1b1b;
+        }
     </style>
 </head>
 
@@ -59,12 +131,12 @@
     <main>
         <form>
             <label>Nombre y Apellidos:</label>
-            <input type="text" title="entre 3 a 16 caracteres" name="nombre" minlength="3" maxlength="16"
-                pattern="[a-zA-Z]{3,16}" required="required" placeholder="nombre" />
-            <input type="text" title="entre 3 a 16 caracteres" name="apellidos" minlength="3" maxlength="16"
-                pattern="[a-zA-Z]{3,16}" required="required" placeholder="1er apellido" />
-            <input type="text" title="entre 3 a 16 caracteres" name="apellidos" minlength="3" maxlength="16"
-                pattern="[a-zA-Z]{3,16}" required="required" placeholder="2do apellido" />
+            <input type="text" title="entre 3 a 16 caracteres, no usar tíldes" name="nombre" minlength="3"
+                maxlength="16" pattern="[a-zA-Z]{3,16}" required="required" placeholder="nombre" />
+            <input type="text" title="entre 3 a 16 caracteres, no usar tíldes" name="apellidos" minlength="3"
+                maxlength="16" pattern="[a-zA-Z]{3,16}" required="required" placeholder=" 1er apellido" />
+            <input type="text" title="entre 3 a 16 caracteres, no usar tíldes" name="apellidos" minlength="3"
+                maxlength="16" pattern="[a-zA-Z]{3,16}" required="required" placeholder="2do apellido" />
             <br />
             <label for="">DNI:</label>
             <input type="text" required="required" minlength="9" placeholder="Ingrese su DNI" maxlength="9"
@@ -101,8 +173,14 @@
             <input type="checkbox" />
             <label>Salto BASE</label>
             <br />
-
-
+            <!-- <label>Fecha de nacimiento:</label> 
+            <select size="dia" name="fecha">
+                <option value="No especificar">No especificar</option>
+                <option value="Masculino">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="No binario">No binario</option>
+            </select>
+            -->
             <br />
             <input type="checkbox">
             <label>Aceptar política de privacidad</label>
@@ -110,6 +188,9 @@
             <button type="submit">Enviar</button>
             <button type="reset">Borrar</button>
         </form>
+        <figure>
+            <img src="img/registrolateral.jpg" alt="" title="">
+        </figure>
     </main>
     <footer>
         <section>
