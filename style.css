@@ -31,6 +31,10 @@
     padding: 0;
 }
 
+body {
+    background: linear-gradient(to right, rgb(255, 255, 255), #888b53);
+}
+
 figure>img {
     width: 100%;
     margin: auto;
@@ -44,6 +48,20 @@ a {
 li {
     list-style: none;
 }
+
+input:valid {
+    border: 3px solid rgb(1, 132, 1);
+}
+
+input:invalid {
+    border: 3px solid rgb(220, 10, 10);
+}
+
+#activo {
+    border-left: solid 3px rgb(2, 2, 124);
+    color: rgb(22, 163, 0);
+}
+
 
 /* HEADER */
 header {
@@ -119,18 +137,11 @@ header>form>button:hover {
     background-color: #e0e1e6;
 }
 
-header>form>input:valid {
-    border: 3px solid rgb(1, 132, 1);
-}
-
-header>form>input:invalid {
-    border: 3px solid rgb(220, 10, 10);
-}
-
 /* NAV */
 
 nav {
     padding: 1%;
+    background-color: #ffffff;
 }
 
 nav>ul {
@@ -167,16 +178,11 @@ nav>ul>li>img:hover {
     width: 120%;
 }
 
-#activo{
-    background-color: #c5c5c8;
-}
-
 /* FOOTER */
 
 footer {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1%;
     border: solid 1px hsl(0, 0%, 0%);
     padding: 2%;
     background-color: #202229;

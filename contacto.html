@@ -8,7 +8,133 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        main>section {
+            background-image: url(img/bannerContacto.jpg);
+            background-size: cover;
+            background-position: center;
+            box-shadow: 0px 0px 10px #365b38;
+        }
+
+        main>section>h2 {
+            flex: 5;
+            font-size: 5vw;
+            text-align: center;
+            min-width: 300px;
+            font-family: 'Fredoka One', cursive;
+            color: rgb(255, 255, 255);
+            text-shadow: 0px 0px 10px #026607;
+            padding: 10%;
         
+        }
+
+        main>article {
+            margin: 1%;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        main>article>section {
+            flex: 1;
+            min-width: 250px;
+        }
+        
+        main>article>section>h3 {
+            font-size: 2em;
+            text-align: center;
+            font-family: bond;
+            color: rgb(255, 255, 255);
+            text-shadow: 1px 2px 2px #000000;
+            padding: 2%;
+            margin: 1%;
+        }
+
+        main>article>section>p {
+            text-align: center;
+            padding: 2%;
+            line-height: 30px;
+            letter-spacing: 1.5px;
+        }
+
+        main>article>section>p>a {
+            text-decoration: none;
+            color: #02026e;
+        }
+
+        main>article>section>p>a:hover {
+            background-color: #c8c2c2;
+        }
+
+        main>article>section>section {
+            text-align: center;
+        }
+
+        /* MAIN FORM*/
+        main>article>section>form {
+            margin:2% 10%;
+            width: 90%;
+            padding: 2%;
+        }
+
+        main>article>section>form>label {
+            display: inline-block;
+            min-width: 230px;
+            margin-bottom: 3%;
+            font-size: 1.3em;
+        }
+
+        main>article>section>form input,
+        select {
+            margin-bottom: 1%;
+            padding: 2%;
+        }
+
+        textarea {
+            width: 60%;
+            min-height: 100px;
+            resize: none;
+        }
+
+        label:nth-of-type(7) {
+            display: inline-block;
+            min-width: 350px;
+            margin-bottom: 3%;
+        }
+
+        label:nth-of-type(8) {
+            display: inline-block;
+            min-width: 20px;
+            margin-bottom: 3%;
+        }
+
+        label:nth-of-type(9) {
+            display: inline-block;
+            min-width: 20px;
+            margin-bottom: 3%;
+        }
+
+        label:nth-of-type(10) {
+            display: inline-block;
+            min-width: 300px;
+            margin-bottom: 3%;
+        }
+
+        button {
+            margin: 5px 5px 5px 45px;
+            padding: 10px;
+            cursor: pointer;
+            font-size: 1em;
+            font-weight: bold;
+            color: #000000;
+            border: solid 2px #000000;
+            text-transform: uppercase;
+            background-color: #ffffff;
+        }
+
+        button:hover {
+            color: #0c0677;
+            background-color: #c5c5c8;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -46,7 +172,7 @@
                 <a href="registro.html">Registro</a>
             </li>
             <li>
-                <a  id="activo" href="contacto.html">Contacto</a>
+                <a id="activo" href="contacto.html">Contacto</a>
             </li>
             <li>
                 <img src="img/es.png" alt="español" title="español" />
@@ -57,7 +183,72 @@
         </ul>
     </nav>
     <main>
-
+        <section>
+            <h2>Contáctanos</h2>
+        </section>
+        <article>
+            <section>
+                <h3>Ayúdanos a hacerte la mejor propuesta</h3>
+                <p>Intenta rellenar correctamente todos los campos y coméntanos todos los detalles posibles en
+                    «observaciones». Cuanta más información tengamos de tu petición mejores opciones podremos
+                    proponerte.</p>
+                <h3>Para más información</h3>
+                <p>Llamar al número de teléfono:<a href="tel:+34640856854" tel="+34640856854">+34 640856854</a><br />
+                    También puede enviarnos un email:<a href="mailto:gcaribe14@hotmail.com">gcaribe14@hotmail.com</a>
+                </p>
+                <section>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2985.1934065944206!2d2.0221075154313124!3d41.56505857924829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a492c2439c42ad%3A0xe87ed78272d437ff!2sACTIUHUM%C3%80!5e0!3m2!1ses!2ses!4v1682097873432!5m2!1ses!2ses"
+                        width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </section>
+            </section>
+            <section>
+                <form>
+                    <label>Nombre:</label>
+                    <input type="text" title="entre 4 a 20 caracteres" name="nombre" minlength="4" maxlength="20"
+                        pattern="[a-zA-Z]{4,20}" required="required" placeholder="nombre" />
+                    <br />
+                    <label>Email:</label>
+                    <input type="email" name="email" placeholder="ingrese su email" required="required"
+                        pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                        title="ingrese un email válido" />
+                    <br />
+                    <label for="telefono">Teléfono de contacto:</label>
+                    <input type="tel" name="telefono" required="required" placeholder="+34 666 66 66 66"
+                        pattern="[+]\d{1,3}\s\d{3}\s\d{2}\s\d{2}\s\d{2}" />
+                    <br />
+                    <label>Motivo de la Consulta:</label>
+                    <select name="opciones" required="required" title="Seleccione una opción">
+                        <option value="Escalada">Escalada</option>
+                        <option value="Rafting">Rafting</option>
+                        <option value="Paracaidismo">Paracaidismo</option>
+                        <option value="Parapente">Parapente</option>
+                        <option value="Salto BASE">Salto BASE</option>
+                    </select>
+                    <br />
+                    <label for="">Fecha de la Actividad:</label>
+                    <input type="text" required="required" placeholder="dd-mm-aaaa" pattern="\d{2}-\d{2}-\d{4}" />
+                    <br />
+                    <label>Texto de la Consulta:</label>
+                    <textarea name="texto de la consulta" cols="30" rows="10" placeholder="escriba su consulta"
+                        required="required" title="al menos 10 caracteres"></textarea>
+                    <br />
+                    <label>Desea recibir publicidad deportiva?</label>
+                    <input type="radio" name="publicidad" />
+                    <label>Si</label>
+                    <input type="radio" name="publicidad" />
+                    <label>No</label>
+                    <br />
+                    <input type="checkbox">
+                    <label>Aceptar política de privacidad</label>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Borrar</button>
+                </form>
+            </section>
+        </article>
     </main>
     <footer>
         <section>
