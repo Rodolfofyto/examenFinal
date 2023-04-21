@@ -167,6 +167,10 @@ nav>ul>li>img:hover {
     width: 120%;
 }
 
+#activo{
+    background-color: #c5c5c8;
+}
+
 /* FOOTER */
 
 footer {
