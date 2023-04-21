@@ -65,7 +65,6 @@ header>figure {
     border-radius: 50%;
     overflow: hidden;
     box-shadow: 1px 2px 3px #000000;
-
 }
 
 header>h1 {
@@ -165,7 +164,7 @@ nav>ul>li>a:hover {
 }
 
 nav>ul>li>img:hover {
-    width: 110%;
+    width: 120%;
 }
 
 /* FOOTER */
@@ -188,13 +187,19 @@ footer>section:last-of-type {
     text-align: end;
 }
 
+footer>section:last-of-type>p {
+    margin-right: 2%;
+}
+
 footer>section>ul {
     display: flex;
     flex-direction: row-reverse;
     color: #ffffff;
+    padding-top: 1%;
 }
 
 footer>section>p {
+    margin-bottom: 1%;
     font-family: bond;
     font-weight: 500;
     color: #ffffff;
@@ -216,5 +221,4 @@ footer>section>p>a {
 footer>section>ul>li>a>img {
     width: 40%;
     border-radius: 50%;
-    
 }
