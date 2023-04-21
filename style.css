@@ -212,3 +212,9 @@ footer>section>p>a {
     font-family: bond;
     font-weight: 700;
 }
+
+footer>section>ul>li>a>img {
+    width: 40%;
+    border-radius: 50%;
+    
+}
