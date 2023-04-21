@@ -8,7 +8,7 @@
     <title>Registro</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        
+
     </style>
 </head>
 
@@ -57,7 +57,59 @@
         </ul>
     </nav>
     <main>
+        <form>
+            <label>Nombre y Apellidos:</label>
+            <input type="text" title="entre 3 a 16 caracteres" name="nombre" minlength="3" maxlength="16"
+                pattern="[a-zA-Z]{3,16}" required="required" placeholder="nombre" />
+            <input type="text" title="entre 3 a 16 caracteres" name="apellidos" minlength="3" maxlength="16"
+                pattern="[a-zA-Z]{3,16}" required="required" placeholder="1er apellido" />
+            <input type="text" title="entre 3 a 16 caracteres" name="apellidos" minlength="3" maxlength="16"
+                pattern="[a-zA-Z]{3,16}" required="required" placeholder="2do apellido" />
+            <br />
+            <label for="">DNI:</label>
+            <input type="text" required="required" minlength="9" placeholder="Ingrese su DNI" maxlength="9"
+                pattern="(([0-9]{8})|([XYZ]\d{7}))[ABCDEFGHJKLMNPQRSTVWXYZ]" />
+            <br />
+            <label for="">Usuario:</label>
+            <input type="text" title="entre 4 a 12 caracteres" name="usuario" minlength="4" maxlength="12"
+                placeholder="user" pattern=".{4,12}" required="required" />
+            <br />
+            <label for="">Contraseña:</label>
+            <input type="password" title="entre 4 a 12 caracteres" name="password" minlength="4" maxlength="12"
+                placeholder="password" pattern=".{4,12}" required="required" />
+            <br />
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="ingrese su email" required="required"
+                pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                title="ingrese un email válido" />
+            <br />
+            <label>Sexo:</label>
+            <input type="radio" name="sexo" checked="checked" />
+            <label>Hombre</label>
+            <input type="radio" name="sexo" />
+            <label>Mujer</label>
+            <br />
+            <label>Que deportes prefieres:</label>
+            <input type="checkbox" />
+            <label>Escalada</label>
+            <input type="checkbox" />
+            <label>Rafting</label>
+            <input type="checkbox" />
+            <label>Paracaidismo</label>
+            <input type="checkbox" />
+            <label>Parapente</label>
+            <input type="checkbox" />
+            <label>Salto BASE</label>
+            <br />
 
+
+            <br />
+            <input type="checkbox">
+            <label>Aceptar política de privacidad</label>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="reset">Borrar</button>
+        </form>
     </main>
     <footer>
         <section>

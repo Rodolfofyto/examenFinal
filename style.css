@@ -197,10 +197,6 @@ footer>section:last-of-type {
     text-align: end;
 }
 
-footer>section:last-of-type>p {
-    margin-right: 2%;
-}
-
 footer>section>ul {
     display: flex;
     flex-direction: row-reverse;
@@ -219,6 +215,7 @@ footer>section>p:first-of-type {
     font-variant: small-caps;
     font-weight: bold;
     letter-spacing: 1px;
+    font-size: 1.3em;
 }
 
 footer>section>p>a {
