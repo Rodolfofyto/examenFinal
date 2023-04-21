@@ -8,11 +8,15 @@
     <title>Contacto</title>
     <link rel="stylesheet" href="style.css" />
     <style>
+        main {
+            width: 100%;
+        }
+
         main>section {
             background-image: url(img/bannerContacto.jpg);
             background-size: cover;
             background-position: center;
-            box-shadow: 0px 0px 10px #365b38;
+            box-shadow: 0px 0px 5px #365b38;
         }
 
         main>section>h2 {
@@ -22,9 +26,9 @@
             min-width: 300px;
             font-family: 'Fredoka One', cursive;
             color: rgb(255, 255, 255);
-            text-shadow: 0px 0px 10px #026607;
+            text-shadow: 0px 0px 10px #003103;
             padding: 10%;
-        
+
         }
 
         main>article {
@@ -37,7 +41,7 @@
             flex: 1;
             min-width: 250px;
         }
-        
+
         main>article>section>h3 {
             font-size: 2em;
             text-align: center;
@@ -70,9 +74,8 @@
 
         /* MAIN FORM*/
         main>article>section>form {
-            margin:2% 10%;
+            margin: 2% 0 2% 10%;
             width: 90%;
-            padding: 2%;
         }
 
         main>article>section>form>label {
@@ -88,37 +91,37 @@
             padding: 2%;
         }
 
-        textarea {
+        main>article>section>form>textarea {
             width: 60%;
             min-height: 100px;
             resize: none;
         }
 
-        label:nth-of-type(7) {
+        main>article>section>form>label:nth-of-type(7) {
             display: inline-block;
             min-width: 350px;
             margin-bottom: 3%;
         }
 
-        label:nth-of-type(8) {
+        main>article>section>form>label:nth-of-type(8) {
             display: inline-block;
             min-width: 20px;
             margin-bottom: 3%;
         }
 
-        label:nth-of-type(9) {
+        main>article>section>form>label:nth-of-type(9) {
             display: inline-block;
             min-width: 20px;
             margin-bottom: 3%;
         }
 
-        label:nth-of-type(10) {
+        main>article>section>form>label:nth-of-type(10) {
             display: inline-block;
             min-width: 300px;
             margin-bottom: 3%;
         }
 
-        button {
+        main>article>section>form>button {
             margin: 5px 5px 5px 45px;
             padding: 10px;
             cursor: pointer;
@@ -130,7 +133,7 @@
             background-color: #ffffff;
         }
 
-        button:hover {
+        main>article>section>form>button:hover {
             color: #0c0677;
             background-color: #c5c5c8;
             cursor: pointer;

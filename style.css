@@ -228,6 +228,10 @@ footer>section>p>a {
     font-weight: 700;
 }
 
+footer>section>p>a:hover {
+    color: #1f02b0;
+}
+
 footer>section>ul>li>a>img {
     width: 40%;
     border-radius: 50%;
