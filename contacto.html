@@ -10,6 +10,7 @@
     <style>
         main {
             width: 100%;
+            background-color: #ffffff;
         }
 
         main>section {
@@ -46,7 +47,7 @@
             font-size: 2em;
             text-align: center;
             font-family: bond;
-            color: rgb(255, 255, 255);
+            color: rgb(31, 199, 8);
             text-shadow: 1px 2px 2px #000000;
             padding: 2%;
             margin: 1%;
@@ -86,9 +87,13 @@
         }
 
         main>article>section>form input,
-        select {
+        main>article>section>form select {
             margin-bottom: 1%;
             padding: 2%;
+        }
+
+        main>article>section>form select {
+           min-width: 34.6%;
         }
 
         main>article>section>form>textarea {
@@ -163,13 +168,16 @@
                 <a href="index.html">Inicio</a>
             </li>
             <li>
-                <a href="deportes.html">Deportes</a>
-            </li>
-            <li>
-                <a href="escalada.html">Escalada</a>
-            </li>
-            <li>
-                <a href="rafting.html">Rafting</a>
+                <div class="dropdown">
+                    <div class="dropdown__trigger"><a href="deportes.html">Deportes</a></div>
+                    <div class="dropdown__content">
+                        <a href="escalada.html">Escalada</a>
+                        <a href="rafting.html">Rafting</a>
+                        <a href="#">Paracaidísmo</a>
+                         <a href="#">Parapente</a>
+                        <a href="#">Salto Base</a>
+                    </div>
+                </div>
             </li>
             <li>
                 <a href="registro.html">Registro</a>

@@ -49,7 +49,7 @@ li {
     list-style: none;
 }
 
-input:valid {
+select, input:valid {
     border: 3px solid rgb(1, 132, 1);
 }
 
@@ -114,11 +114,11 @@ header>form>label {
     text-align: left;
 }
 
-header>form>input {
+select, input {
     padding: 1%;
 }
 
-header>form>input:hover {
+select:hover, input:hover {
     outline: 3px solid #0eff0e;
     cursor: pointer;
 }
@@ -161,7 +161,7 @@ nav>ul>li:nth-of-type(7) {
     margin-left: 3%;
 }
 
-nav>ul>li>a {
+nav>ul li a {
     margin: 1%;
     padding: 7px 10px;
     font-size: 2.5vw;
@@ -169,13 +169,39 @@ nav>ul>li>a {
 
 }
 
-nav>ul>li>a:hover {
+nav>ul li a:hover {
     background-color: #c5c5c8;
     color: #0c0677;
 }
 
 nav>ul>li>img:hover {
     width: 120%;
+}
+
+nav>ul>li .dropdown {
+    position: relative;
+}
+
+nav>ul>li .dropdown__trigger {
+    cursor: pointer;
+}
+
+nav>ul>li .dropdown__content {
+    display: none;
+    left: 0;
+    padding-top: 0.25rem;
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    z-index: 9999;
+}
+
+nav>ul>li .dropdown:hover .dropdown__content {
+    display: block;
+}
+
+nav>ul>li .dropdown__content a{
+    padding: 0;
 }
 
 /* FOOTER */
