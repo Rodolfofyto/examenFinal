@@ -8,7 +8,93 @@
     <title>Todo Riesgo</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-        
+        main{
+            background-color: #ffffff;
+        }
+        main>h2 {
+            background-image: url(img/bannerPrincipal.avif);
+            background-size: cover;
+            font-variant: small-caps;
+            text-align: center;
+            position: relative;
+            padding: 10% 0;
+            font-size: 7vw;
+            color: rgb(255, 255, 255);
+            text-shadow: 10px 10px 10px #0b091e;
+            border-bottom-right-radius: 90%;
+        }
+
+        main>p{
+            margin: 2%;
+            text-align: justify;
+            font-family: bond;
+            line-height: 25px;
+            letter-spacing: 1px;
+        }
+
+        main a {
+            color: #ffffff;
+        }
+
+        main a:hover {
+            color: #c4c1c1;
+        }
+
+        main>article p {
+            text-align: left;
+            position: relative;
+            padding: 5% 2%;
+            font-size: 5vw;
+            font-weight: bold;
+            border-right: 2px solid #ffffff;
+        }
+
+        main>article>section {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        main>article>section>p {
+            flex: 1;
+            min-width: 400px;
+        }
+
+        main>article>p:first-of-type {
+            background-image: url(img/escaladaChica.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>article>section:first-of-type>p:first-of-type {
+            background-image: url(img/saltoBase.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>article>section:first-of-type>p:last-of-type {
+            background-image: url(img/paracaidismo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>article>p:last-of-type {
+            background-image: url(img/rafting.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>article>section:last-of-type>p:first-of-type {
+            background-image: url(img/parapente.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>article>section:last-of-type>p:last-of-type {
+            background-image: url(img/buceo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 
@@ -57,7 +143,49 @@
         </ul>
     </nav>
     <main>
-
+        <h2>¿Qúe son los Deportes de Riesgo?</h2>
+        <p>Los deportes de riesgo son aquellos que presentan un peligro real o aparente para la integridad física de
+            quienes lo practican, incluso un riesgo vital. Pueden ser deportes realizados en condiciones difíciles o
+            extremas o, simplemente, actividades de ocio cuyos riesgos no pueden ser controlados totalmente por una
+            preparación técnica o física por extraordinaria que sea esta. Uno de los elementos que podrían
+            definirlos, entre otros, es la búsqueda de inyecciones de adrenalina por parte del deportista.</p>
+        <p>Los deportes de riesgo son, también, sinónimo de creatividad, pasión y experimentación, una búsqueda de
+            nuevas emociones, del más difícil todavía, de inyecciones extra de adrenalina, que no se consiguen con
+            la práctica de otros deportes habituales de menor riesgo. También son sinónimo de riesgo para la salud o
+            la integridad física, incluso para la vida. Entre las condiciones que los definen como una práctica
+            deportiva extrema, hay dos elementos que suelen ser los más frecuentes: la velocidad y la altitud, pero
+            no son los únicos.</p>
+        <p>Lo cierto es que pueden practicarse por Tierra, hielo o nieve (bici de montaña, esquí fuera de pista o
+            sitios inexplorados vírgenes de alas montañas-heliesquí-, esquí con parapente o “snowkitting”,
+            “skateboarding”, espeleología, descenso de barrancos o cañones, escalada libre, alpinismo, parkour- algo
+            parecido a una gimnasia rítmica callejera consiste en que los practicantes van de un lado a otro de la
+            ciudad de la forma más rápida posible, saltando o columpiándose de paramentos urbanos, cuál gibones en
+            la selva, y que exige un grado de entrenamiento físico excepcional, escalada en hielo, fórmula 1 u otras
+            carreras de coches o motos, boxeo, kickboxing…); por Mar (surf, peor con tiburones como en Durban,
+            Sudáfrica, o en Australia, que sin ellos, peor cuanto mayores son las olas, esquí acuático, “kitesurf”,
+            kayak, buceo, sobre todo en cuevas, rafting…) y Aire (ala delta, paracaidismo, desde un punto base, un
+            edificio…o un avión, puenting, vuelo libre con alas o “wingfly”,) que le costó la vida a Álvaro Bultó
+            aunque le cuesta la vida a varios deportistas cada año. Una de las razones de su práctica ,como hemos
+            dicho anteriormente, es la búsqueda de emociones, el factor más atractivo de interés de la gente por los
+            deportes extremos, la adrenalina, la intensidad es lo que los diferencia de cualquier otro tipo de
+            deportes, pero no es el único. Sin duda detrás de ellos existe un gen que nos hace buscar nuestros
+            límites o una torpe necesidad de diferenciarnos, de autoafirmación, por ello, la lista es infinita pues
+            la imaginación humana lo es y cada año surge alguna variante nueva.</p>
+        <article>
+            <hr />
+            <p><a href="escalada.html">Escalada: <br /> Todo lo que <br /> necesitas saber</a></p>
+            <hr />
+            <section>
+                <p><a href="#">Salto-Base:<br /> Todo lo que <br /> necesitas saber</a></p>
+                <p><a href="#">Paracaidísmo:<br /> Todo lo que <br /> necesitas saber</a></p>
+            </section>
+            <p><a href="rafting.html">Rafting:<br /> Todo lo que <br /> necesitas saber</a></p>
+            <hr />
+            <section>
+                <p><a href="#">Parapente:<br /> Todo lo que <br /> necesitas saber</a></p>
+                <p><a href="#">Buceo:<br /> Todo lo que <br /> necesitas saber</a></p>
+            </section>
+        </article>
     </main>
     <footer>
         <section>
