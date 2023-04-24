@@ -1,26 +1,26 @@
 @font-face {
-    font-family: bond;
+    font-family: "bond";
     src: url(fonts/aleo/Aleo-Regular.ttf);
     font-style: normal;
     font-weight: normal;
 }
 
 @font-face {
-    font-family: bond;
+    font-family: "bond";
     src: url(fonts/aleo/Aleo-Bold.ttf);
     font-style: normal;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: bond;
+    font-family: "bond";
     src: url(fonts/aleo/Aleo-BoldItalic.ttf);
     font-style: italic;
     font-weight: bold;
 }
 
 @font-face {
-    font-family: bond;
+    font-family: "bond";
     src: url(fonts/aleo/Aleo-Italic.ttf);
     font-style: italic;
     font-weight: normal;
@@ -80,7 +80,7 @@ header>figure {
 
 header>h1 {
     flex: 7;
-    font-family: bond;
+    font-family: "bond";
     font-size: 5vw;
     text-align: center;
     letter-spacing: 8px;
@@ -97,7 +97,7 @@ header>form {
 }
 
 header>form>label {
-    font-family: bond;
+    font-family: "bond";
     font-weight: bold;
     font-variant: small-caps;
     min-width: 100px;
@@ -225,7 +225,7 @@ footer>section>ul {
 
 footer>section>p {
     margin-bottom: 1%;
-    font-family: bond;
+    font-family: "bond";
     font-weight: 500;
     color: #ffffff;
 }
@@ -240,7 +240,7 @@ footer>section>p:first-of-type {
 footer>section>p>a {
     text-decoration: underline;
     color: #2b00ff;
-    font-family: bond;
+    font-family: "bond";
     font-weight: 700;
 }
 
