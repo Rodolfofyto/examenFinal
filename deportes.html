@@ -8,9 +8,65 @@
     <title>Deportes</title>
     <link rel="stylesheet" href="style.css" />
     <style>
-       main h2, h3{
-        color:#337e93;
-       }
+        main {
+            display: flex;
+            margin: 1%;
+            padding: 1%;
+        }
+
+        main>article>section>h2 {
+            font-size: 3em;
+            color: #337e93;
+        }
+
+        main>article>section>h3 {
+            color: #337e93;
+            font-size: 2em;
+        }
+
+        main>article p {
+            text-align: justify;
+            line-height: 25px;
+            letter-spacing: 1.5px;
+            padding: 2% 0;
+        }
+
+        /* Aside*/
+        main>aside>p:first-of-type {
+            background-image: url(img/escaladaChica.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>aside>p:nth-of-type(2) {
+            background-image: url(img/saltoBase.webp);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>aside>p:nth-of-type(3) {
+            background-image: url(img/paracaidismo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>aside>p:nth-of-type(4) {
+            background-image: url(img/raftingEquipo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>aside>p:nth-of-type(5) {
+            background-image: url(img/parapente.jpeg);
+            background-size: cover;
+            background-position: center;
+        }
+
+        main>aside>p:last-of-type {
+            background-image: url(img/buceo.jpg);
+            background-size: cover;
+            background-position: center;
+        }
     </style>
 </head>
 
@@ -74,7 +130,8 @@
                     durante su práctica.
                 </p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/deportesRafting.webp" alt="rafting" title="rafting" />
+                    <figcaption>Rafting</figcaption>
                 </figure>
                 <p>Los deportes de riesgo, también llamados (extremos), son aquellos en los que existe cierta
                     peligrosidad durante su práctica. En este artículo te contaremos cuáles son y podrás decir cuán
@@ -86,12 +143,13 @@
                     preparación —tanto mental como física— y autocontrol por parte del deportista.</p>
             </section>
             <section>
-                <h2>1. Paracaidísmo</h2>
+                <h3>1. Paracaidísmo</h3>
                 <p>Se trata de una disciplina en la que una persona se lanza desde cierta altura usando un paracaídas
                     que amortigüe su impacto al aterrizar. Se puede hacer desde un transporte en movimiento
                     (helicóptero, avión, globo aerostático) o desde un lugar fijo (por ejemplo, una montaña).</p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/deportesParacaidismo.webp" alt="paracaidísmo" title="paracaidísmo" />
+                    <figcaption>Paracaidísmo</figcaption>
                 </figure>
                 <p>La historia del paracaidismo es mucho más antigua de lo que pensamos, ya que el primer intento de
                     tirarse con un paracaídas del que se tenga conocimiento se remonta al año 852 en España.</p>
@@ -102,7 +160,8 @@
                     descender más rápido desde la cima a la que habían llegado. El parapente es un planeador ligero
                     flexible, el cual tiene una serie de sogas a las que se sujeta el practicante.</p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/deportesParapente.webp" alt="parapente" title="parapente" />
+                    <figcaption>Parapente</figcaption>
                 </figure>
                 <p>En muchos casos el vuelo en parapente se realiza con un piloto y un pasajero; ambos deben llevar
                     equipo de seguridad, casco, paracaídas de emergencias, equipo de radio, GPS y variómetro. Según las
@@ -115,7 +174,8 @@
                     Este como en el distrito de los Lagos de Inglaterra.
                 </p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/escalada.webp" alt="escalada" title="escalada" />
+                    <figcaption>Escalada</figcaption>
                 </figure>
                 <p>Existen diferentes tipos de escaladas: en interiores encontramos las de rocódromo y las de salas de
                     boulder. Por otro lado, en exteriores pueden ser en roca, alpina, en hielo, en acantilados sobre el
@@ -129,7 +189,8 @@
                     practique.
                 </p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/deportesDeRafting.webp" alt="rafting" title="rafting" />
+                    <figcaption>Rafting</figcaption>
                 </figure>
                 <p>El rafting se lleva a cabo río abajo y a bordo de una embarcación como puede ser una canoa, un kayak
                     o una balsa. Hay una clasificación de los ríos según su dificultad: aguas planas (para
@@ -143,7 +204,8 @@
                     eléctrico), span (viaducto) y earth (risco, acantilado, tierra).
                 </p>
                 <figure>
-                    <img src="" alt="" title="" />
+                    <img src="img/saltoBase.webp" alt="salto Base" title="salto Base" />
+                    <figcaption>Salto Base</figcaption>
                 </figure>
                 <p>El salto BASE es considerado el más arriesgado de los deportes de aventura; para practicarlo, es
                     necesario contar con experiencia y prestar mucha atención a la técnica. Los saltadores usan un
@@ -154,6 +216,14 @@
                 descenso en ciclismo de montaña, descenso en patineta y patineta de velocidad. ¿Te atreves a probar
                 cualquiera de ellos?</p>
         </article>
+        <aside>
+            <p><a href="escalada.html">Escalada: <br /> Todo lo que <br /> necesitas saber</a></p>
+            <p><a href="#">Salto-Base:<br /> Todo lo que <br /> necesitas saber</a></p>
+            <p><a href="#">Paracaidísmo:<br /> Todo lo que <br /> necesitas saber</a></p>
+            <p><a href="rafting.html">Rafting:<br /> Todo lo que <br /> necesitas saber</a></p>
+            <p><a href="#">Parapente:<br /> Todo lo que <br /> necesitas saber</a></p>
+            <p><a href="#">Buceo:<br /> Todo lo que <br /> necesitas saber</a></p>
+        </aside>
     </main>
     <footer>
         <section>
